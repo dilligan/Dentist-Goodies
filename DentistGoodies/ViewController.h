@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSMutableArray *selections;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *laresulta;
+@property (weak, nonatomic) IBOutlet UILabel *secondLabel;
+@property (weak, nonatomic) IBOutlet UILabel *testlabel;
+@property (weak, nonatomic) IBOutlet UILabel *testLabel2;
+
+- (IBAction)cherry:(id)sender;
+- (IBAction)minty:(id)sender;
+- (IBAction)bubblegum:(id)sender;
+
+- (IBAction)pink:(id)sender;
+- (IBAction)blue:(id)sender;
+
++ (void)setArrayIndex:(NSInteger)index toString:(NSString*)name;
 
 @end
